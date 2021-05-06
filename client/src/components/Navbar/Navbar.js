@@ -22,7 +22,7 @@ const Navbar = () => {
                 Basic Ledger
             </MenuItem>
             <MenuItem onClick={handleClose} component={Link} to="/distributedP2P">
-                DistributedP2P
+                Distributed P2P Network
             </MenuItem>
         </Menu>
     );
@@ -39,7 +39,7 @@ const Navbar = () => {
                             Basic Ledger
                         </Button>
                         <Button color="inherit" component={Link} to="/distributedP2P">
-                            DistributedP2P
+                            Distributed P2P Network
                         </Button>
                     </Grid>
                     <IconButton className={classes.desktop} color="inherit" onClick={handleClick}>

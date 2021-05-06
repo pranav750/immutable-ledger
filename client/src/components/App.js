@@ -1,8 +1,7 @@
 import React from "react"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
-import Home from './Home/Home';
+import Ledger from './Ledger/Ledger';
 import { makeStyles } from "@material-ui/core";
-import DistributedP2P from "./DistributedP2P/DistributedP2P";
 import Navbar from "./Navbar/Navbar";
 
 const useStyles = makeStyles(theme => ({
@@ -19,10 +18,10 @@ const App = () => {
       <Navbar />
       <Switch>
         <Route exact path="/">
-          <Home className={classes.root}/>
+          <Ledger className={classes.root} distributed={false}/>
         </Route>
         <Route exact path="/distributedP2P">
-          <DistributedP2P className={classes.root}/>
+          <Ledger className={classes.root} distributed={true}/>
         </Route>
       </Switch>
     </Router>
